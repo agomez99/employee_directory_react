@@ -11,6 +11,8 @@ function Table() {
     const { sortBy } = useGet(url);
     //table
     const { displayedEmployees} = useContext(EmployeeContext)
+
+
     return (
         <table id="employee">
             <thead>
@@ -25,6 +27,10 @@ function Table() {
             </thead>
             <tbody>
                 {displayedEmployees.map(employee => {
+                         const strDate = employee.dob.date;
+                         const formatDate = strDate.substring(0,10);
+
+
                     return (
                         <tr key={employee.login.uuid}>
                             <td>{employee.name.first}</td>
@@ -32,7 +38,7 @@ function Table() {
                             <td>{employee.login.username}</td>
                             <td>{employee.gender}</td>
                             <td>{employee.email}</td>
-                            <td>{employee.dob.date}</td>
+                            <td>{formatDate}</td>
                         </tr>
                     )
                 }
