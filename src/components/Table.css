@@ -1,0 +1,37 @@
+
+body{
+    margin-top: 5%;
+}
+
+thead{
+    background-color: #8bd2ec;
+    font-weight: bold;
+}
+
+tbody {
+    text-align: center;
+
+}
+
+#employee{
+    justify-content: center;
+    margin-left:25%;
+    margin-right:20%;
+    border: 3px solid rgb(10,10,10);
+    margin-top: 5%;
+
+}
+
+#employee th{
+    text-align: center;
+    background-color: #8bd2ec
+
+}
+#employee td, #employee th{
+    border: 1px solid #ddd;
+    padding:12px;
+}
+
+#employee tr:hover{
+    background-color: #ddd;
+}
