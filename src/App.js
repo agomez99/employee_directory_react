@@ -5,7 +5,6 @@ import Header from "./components/Header"
 import Table from "./components/Table"
 import Search from "./components/Search.js"
 
-// where I learned about context https://www.youtube.com/watch?v=lhMKvyLRWo0
 import { EmployeeContext } from "./components/EmployeeContext"
 import SearchLast from './components/SearchLast';
 
@@ -18,7 +17,6 @@ function App() {
       <EmployeeContext.Provider value={{employees, setEmployees, displayedEmployees, setDisplayedEmployees}}>
         <Header />
         <Search />
-        
         <SearchLast />
         <Table />
       </EmployeeContext.Provider>
