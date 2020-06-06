@@ -1,7 +1,6 @@
 import React, {useState, useContext} from 'react';
 import { EmployeeContext } from './EmployeeContext.js';
 import "./Search.css";
-import Button from "./Button";
 
 function Search() {
   const [search, setSearch] = useState("");
