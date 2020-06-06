@@ -1,6 +1,6 @@
 import React, {useState, useContext} from 'react';
-import { EmployeeContext } from './EmployeeContext.js';
-import "./Search.css"
+import { EmployeeContext } from '../EmployeeContext.js';
+import "./SearchLast.css"
 
 function SearchLast(){
     // stores the characters being entered into the search input

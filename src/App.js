@@ -1,12 +1,11 @@
 import React, {useState} from 'react';
 
 import './App.css';
-import Header from "./components/Header"
-import Table from "./components/Table"
-import Search from "./components/Search.js"
-
+import Header from "./components/Header/Header"
+import Table from "./components/Table/Table"
+import Search from "./components/Search/Search"
 import { EmployeeContext } from "./components/EmployeeContext"
-import SearchLast from './components/SearchLast';
+import SearchLast from   "./components/SearchLast/SearchLast";
 
 function App() {
   const [employees, setEmployees] = useState([]);

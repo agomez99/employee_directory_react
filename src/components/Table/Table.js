@@ -1,8 +1,8 @@
 import React, { useState, useContext } from 'react';
-import { useGet } from "../Hook/API.js"
+import { useGet } from "../../Hook/API.js"
 import "./Table.css"
-import Button from "./Button.js"
-import { EmployeeContext } from './EmployeeContext.js';
+import Button from "../Button/Button.js"
+import { EmployeeContext } from '../EmployeeContext.js';
 
 function Table() {
     //30 random users from US
