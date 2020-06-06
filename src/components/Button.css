@@ -1,5 +1,14 @@
 button{
     border: none;
-    border-radius: 6px;
+    border-radius:10px;
+    padding: 10px;
     background-color: white;
+    display:flexbox;
+    
+}
+
+button:hover{
+    background-color:rgb(140, 231, 163);
+}
+button:active{
 }

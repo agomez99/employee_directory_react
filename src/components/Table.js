@@ -5,7 +5,7 @@ import Button from "./Button.js"
 import { EmployeeContext } from './EmployeeContext.js';
 
 function Table() {
-  
+    //30 random users from US
     const [url] = useState("https://randomuser.me/api/?results=30&nat=us")
     // custom hook 
     const { sortBy } = useGet(url);

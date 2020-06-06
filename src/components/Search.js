@@ -23,7 +23,6 @@ function Search() {
     <div>
       <h4>Search By First Name:</h4>
       <input type="text" onChange={updateSearch} value={search}></input>
-      <Button />
     </div>
   );
 }
