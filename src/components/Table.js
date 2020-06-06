@@ -15,9 +15,9 @@ function Table() {
         <table id="employee">
             <thead>
                 <tr>
-                <td onClick={() => sortBy("loginusername")}><Button>User Name</Button></td>
                     <td onClick={() => sortBy("name")}><Button>First Name</Button></td>
                     <td onClick={() => sortBy("lastName")}><Button>Last Name</Button></td>
+                    <td onClick={() => sortBy("username")}><Button>User Name</Button></td>
                     <td onClick={() => sortBy("gender")}><Button>Gender</Button></td>
                     <td onClick={() => sortBy("email")}><Button>Email</Button></td>
                     <td onClick={() => sortBy("age")}><Button>Date of Birth</Button></td>
@@ -27,9 +27,9 @@ function Table() {
                 {displayedEmployees.map(employee => {
                     return (
                         <tr key={employee.login.uuid}>
-                             <td>{employee.login.username}</td>
                             <td>{employee.name.first}</td>
                             <td>{employee.name.last}</td>
+                            <td>{employee.login.username}</td>
                             <td>{employee.gender}</td>
                             <td>{employee.email}</td>
                             <td>{employee.dob.date}</td>

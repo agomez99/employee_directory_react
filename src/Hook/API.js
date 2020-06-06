@@ -31,6 +31,9 @@ export function useGet(url) {
       case "lastName":
         sortByLastName();
         break;
+      case "username":
+        sortUserName();
+        break;
       case "email":
         email();
         break;
@@ -67,6 +70,18 @@ export function useGet(url) {
     });
     setDisplayedEmployees([...employees]);
   }
+  //user name
+  function sortUserName() {
+    employees.sort(function (a, b) {
+      if (a.login.username < b.login.username) {
+        return -1;
+      } else {
+        return 1;
+      }
+    });
+    setDisplayedEmployees([...employees]);
+  }
+  //email
   function email() {
     employees.sort(function (a, b) {
       if (a.email < b.email) {
