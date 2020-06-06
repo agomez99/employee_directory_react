@@ -17,6 +17,22 @@ tbody {
 
 }
 
+
+.headerSortDown:after{
+  content: ' ';
+  position: relative;
+  border: 8px solid transparent;
+}
+
+.headerSortDown:after {
+  top: 8px;
+  border-top-color: rgb(20, 19, 19);
+}
+
+
+
+
+
 #employee{
     justify-content: center;
     margin-left:20%;
@@ -30,12 +46,12 @@ tbody {
 
 #employee th{
     text-align: center;
-    background-color: #8bd2ec
+    background-color: #8bd2ec;
 
 }
 #employee td, #employee th{
     border: 1px solid #ddd;
-    padding:12px;
+    padding:10px;
 }
 
 #employee tr:hover{

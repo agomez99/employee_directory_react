@@ -16,13 +16,13 @@ function Table() {
     return (
         <table id="employee">
             <thead>
-                <tr>
-                    <td onClick={() => sortBy("name")}><Button>First Name</Button></td>
-                    <td onClick={() => sortBy("lastName")}><Button>Last Name</Button></td>
-                    <td onClick={() => sortBy("username")}><Button>User Name</Button></td>
-                    <td onClick={() => sortBy("gender")}><Button>Gender</Button></td>
-                    <td onClick={() => sortBy("email")}><Button>Email</Button></td>
-                    <td onClick={() => sortBy("age")}><Button>Date of Birth</Button></td>
+                <tr >
+                    <td class="headerSortDown" onClick={() => sortBy("name")}><Button>First Name</Button></td>
+                    <td class="headerSortDown"onClick={() => sortBy("lastName")}><Button>Last Name</Button></td>
+                    <td class="headerSortDown"onClick={() => sortBy("username")}><Button>User Name</Button></td>
+                    <td class="headerSortDown"onClick={() => sortBy("gender")}><Button>Gender</Button></td>
+                    <td class="headerSortDown"onClick={() => sortBy("email")}><Button>Email</Button></td>
+                    <td class="headerSortDown"onClick={() => sortBy("age")}><Button>Date of Birth</Button></td>
                 </tr>
             </thead>
             <tbody>
