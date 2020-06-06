@@ -4,7 +4,7 @@ import "./Search.css";
 
 function Search() {
   const [search, setSearch] = useState("");
-  const { employees, setDisplayedEmployees } = useContext(EmployeeContext);
+  const { employees, setDisplayEmployees } = useContext(EmployeeContext);
 
   function updateSearch({ target }) {
     const searchTerm = target.value;
@@ -16,7 +16,7 @@ function Search() {
         ? true
         : false;
     });
-    setDisplayedEmployees([...filterResult]);
+    setDisplayEmployees([...filterResult]);
   }
   return (
     <div>

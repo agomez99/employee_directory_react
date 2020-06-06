@@ -1,17 +1,19 @@
 import React, { useState, useContext } from 'react';
-import { useGet } from "../../Hook/API.js"
+import { useGet } from "../../Hooks/API.js"
 import "./Table.css"
 import Button from "../Button/Button.js"
 import { EmployeeContext } from '../EmployeeContext.js';
 
 function Table() {
+
     //30 random users from US
     const [url] = useState("https://randomuser.me/api/?results=30&nat=us")
+
     // custom hook 
     const { sortBy } = useGet(url);
+    
     //table
     const { displayedEmployees} = useContext(EmployeeContext)
-
 
     return (
         <table id="employee">
