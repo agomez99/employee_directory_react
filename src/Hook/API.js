@@ -1,4 +1,4 @@
-import { useEffect, useContext } from "react";
+import { useState, useContext } from "react";
 import { EmployeeContext } from "../components/EmployeeContext";
 import axios from "axios";
 
@@ -10,7 +10,7 @@ export function useGet(url) {
     setDisplayedEmployees,
   } = useContext(EmployeeContext);
 
-  useEffect(() => {
+  useState(() => {
     async function getEmployees() {
       try {
         const response = await axios.get(url);
@@ -81,6 +81,17 @@ export function useGet(url) {
     });
     setDisplayedEmployees([...employees]);
   }
+    //gender.
+    function sortByGender() {
+      employees.sort(function (a, b) {
+        if (a.gender < b.gender) {
+          return -1;
+        } else {
+          return 1;
+        }
+      });
+      setDisplayedEmployees([...employees]);
+    }
   //email
   function email() {
     employees.sort(function (a, b) {
@@ -93,24 +104,14 @@ export function useGet(url) {
     setDisplayedEmployees([...employees]);
   }
 
-  // age.
+  // dob
   function sortByAge() {
     employees.sort(function (a, b) {
       return a.dob.age - b.dob.age;
     });
     setDisplayedEmployees([...employees]);
   }
-  //gender.
-  function sortByGender() {
-    employees.sort(function (a, b) {
-      if (a.gender < b.gender) {
-        return -1;
-      } else {
-        return 1;
-      }
-    });
-    setDisplayedEmployees([...employees]);
-  }
+
 
   return { displayedEmployees, sortBy };
 }
