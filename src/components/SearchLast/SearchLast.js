@@ -4,7 +4,7 @@ import "./SearchLast.css"
 
 function SearchLast(){
     const [search, setSearch] = useState("")
-    const {employees, setDisplayedEmployees} = useContext(EmployeeContext)
+    const {employees, setDisplayEmployees} = useContext(EmployeeContext)
     
     function updateSearch({target}){
         const searchTerm = target.value
@@ -12,7 +12,7 @@ function SearchLast(){
         const filterResult = employees.filter(function(employee){
             return employee.name.last.toLowerCase().indexOf(searchTerm.toLowerCase()) !== -1 ? true : false
         })
-        setDisplayedEmployees([...filterResult])
+        setDisplayEmployees([...filterResult])
     }
     return(
         <div>

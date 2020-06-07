@@ -9,11 +9,11 @@ import SearchLast from   "./components/SearchLast/SearchLast";
 
 function App() {
   const [employees, setEmployees] = useState([]);
-  const [displayedEmployees, setDisplayedEmployees] = useState([])
+  const [displayedEmployees, setDisplayEmployees] = useState([])
 
   return (
     <div className="App">
-      <EmployeeContext.Provider value={{employees, setEmployees, displayedEmployees, setDisplayedEmployees}}>
+      <EmployeeContext.Provider value={{employees, setEmployees, displayedEmployees, setDisplayEmployees}}>
         <Header />
         <Search />
         <SearchLast />
