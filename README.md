@@ -1,7 +1,7 @@
 # employee_directory_react
 <br>
  An employee directory that can quickly access all current employees information and can search by first name or last name and filter by alphabetical order by name, username, gender, email or date of birth.
- 
+ <br>
 <br>
 Netifly deployment
 <br>
