@@ -2,7 +2,7 @@
 <br>
  An employee directory that can quickly access all current employees information and can search by first name or last name and filter by alphabetical order by name, username, gender, email or date of birth.
  <br>
- <img src="public/Employee.jpg" width="400" height="300" display:block/>
+ <img src="public/Employee.jpg" width="450" height="300" display:block/>
 
 <br>
 Netifly deployment
@@ -14,7 +14,7 @@ https://priceless-shockley-44e876.netlify.app/
 
 React Hooks
 <br>
-<img src="https://rickylau.dev/static/807c733dcf690f6450ed012481a32ead/3916b/react-hooks.png" width="500" height="300" display:block/>
+<img src="https://rickylau.dev/static/807c733dcf690f6450ed012481a32ead/3916b/react-hooks.png" width="400" height="300" display:block/>
 <br>
 Using Random User Generator API
 <br>
