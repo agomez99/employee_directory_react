@@ -2,7 +2,7 @@
 <br>
  An employee directory that can quickly access all current employees information and can search by first name or last name and filter by alphabetical order by name, username, gender, email or date of birth.
  <br>
- <img src="public/Employee.jpg" width="450" height="300" display:block/>
+ <img src="public/assets/employee.png" width="450" height="300" display:block/>
 
 <br>
 Netifly deployment
