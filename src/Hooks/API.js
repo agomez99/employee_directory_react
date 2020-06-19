@@ -7,7 +7,7 @@ export function useGet(url) {
     employees,
     setEmployees,
     displayedEmployees,
-    setDisplayedEmployees,
+    setDisplayEmployees,
   } = useContext(EmployeeContext);
 
   useState(() => {
@@ -15,7 +15,7 @@ export function useGet(url) {
       try {
         const response = await axios.get(url);
         setEmployees(response.data.results);
-        setDisplayedEmployees(response.data.results);
+        setDisplayEmployees(response.data.results);
       } catch (error) {
         console.log("API error!!", error);
       }
@@ -57,7 +57,7 @@ export function useGet(url) {
         return 1;
       }
     });
-    setDisplayedEmployees([...employees]);
+    setDisplayEmployees([...employees]);
   }
   // last name.
   function sortByLastName() {
@@ -68,7 +68,7 @@ export function useGet(url) {
         return 1;
       }
     });
-    setDisplayedEmployees([...employees]);
+    setDisplayEmployees([...employees]);
   }
   //user name
   function sortUserName() {
@@ -79,7 +79,7 @@ export function useGet(url) {
         return 1;
       }
     });
-    setDisplayedEmployees([...employees]);
+    setDisplayEmployees([...employees]);
   }
     //gender.
     function sortByGender() {
@@ -90,7 +90,7 @@ export function useGet(url) {
           return 1;
         }
       });
-      setDisplayedEmployees([...employees]);
+      setDisplayEmployees([...employees]);
     }
   //email
   function email() {
@@ -101,7 +101,7 @@ export function useGet(url) {
         return 1;
       }
     });
-    setDisplayedEmployees([...employees]);
+    setDisplayEmployees([...employees]);
   }
 
   // dob
@@ -109,7 +109,7 @@ export function useGet(url) {
     employees.sort(function (a, b) {
       return a.dob.age - b.dob.age;
     });
-    setDisplayedEmployees([...employees]);
+    setDisplayEmployees([...employees]);
   }
 
 
