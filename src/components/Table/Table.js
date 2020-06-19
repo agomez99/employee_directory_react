@@ -25,6 +25,8 @@ function Table() {
                     <td class="headerSortDown"onClick={() => sortBy("gender")}><Button>Gender</Button></td>
                     <td class="headerSortDown"onClick={() => sortBy("email")}><Button>Email</Button></td>
                     <td class="headerSortDown"onClick={() => sortBy("age")}><Button>Date of Birth</Button></td>
+                    <td ></td>
+
                 </tr>
             </thead>
             <tbody>
@@ -41,6 +43,8 @@ function Table() {
                             <td>{employee.gender}</td>
                             <td>{employee.email}</td>
                             <td>{formatDate}</td>
+                            <td><img src ={employee.picture.thumbnail} alt={employee.name.first+""+ employee.name.last} /></td>
+
                         </tr>
                     )
                 }

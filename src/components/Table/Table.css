@@ -35,8 +35,8 @@ tbody {
 
 #employee{
     justify-content: center;
-    margin-left:20%;
-    margin-right:10%;
+    margin-left:auto;
+    margin-right:auto;
     border: 3px solid rgb(10,10,10);
     margin-top: 2%;
     margin-bottom: 5%;
